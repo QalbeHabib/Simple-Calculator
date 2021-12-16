@@ -25,11 +25,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: NodeJs Installation
-        uses: action/setup-node@v2-beta
+        uses: action/setup-node@v2
         with:
             node-version: '16'
       # Runs a set of commands using the runners shell
       - name: Istalling Surge
         run: npm install --global surge
       - name: Deploying using Surge
-        run: surge ./ rqh_calculator.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ rqh_calculator.surge.sh/ --token ${{ secrets.Surge_Token }}
