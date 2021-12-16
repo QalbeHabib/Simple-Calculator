@@ -36,7 +36,11 @@ body {
 .span-two {
   grid-column: span 2;
 }
-
+.title{
+  text-align: center;
+  color: #FFF;
+  font-weight: 600;
+}
 .output {
   grid-column: 1 / -1;
   background-color: rgba(40, 185, 211, 0.75);
