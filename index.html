@@ -1,32 +1,40 @@
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <input type="number" placeholder="0" class="result" id="result" />
-      <div class="calculator-btns">
-        <button class="btn clear" id="btn ">C</button>
-        <button class="btn" id="btn">/</button>
-        <button class="btn" id="btn">7</button>
-        <button class="btn" id="btn">8</button>
-        <button class="btn" id="btn">9</button>
-        <button class="btn" id="btn">x</button>
-
-        <button class="btn" id="btn">4</button>
-        <button class="btn" id="btn">5</button>
-        <button class="btn" id="btn">6</button>
-        <button class="btn" id="btn">+</button>
-
-        <button class="btn" id="btn">1</button>
-        <button class="btn" id="btn">2</button>
-        <button class="btn" id="btn">3</button>
-        <button class="btn" id="btn">-</button>
-        <button class="btn zero" id="btn ">0</button>
-        <button class="btn" id="btn">=</button>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link href="styles.css" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand">Previous Operand</div>
+      <div data-current-operand class="current-operand">Current-Operand</div>
     </div>
-  </body>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
+
+    <script src="script.js" defer></script>
+ 
+  </div>
+</body>
 </html>
